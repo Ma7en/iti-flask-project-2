@@ -1,55 +1,60 @@
 {% extends './base.html' %}
 
 <!-- content -->
-
 {% block content %}
-<!--  -->
+<main>
+    <section>
+        <div class="">
+            <div class="container py-5">
+                <!--  -->
+                <h1>Welcome, {{ user.username }}</h1>
+                <ul>
+                    <li>
+                        <span> {{ user.id }} </span>
+                    </li>
+                    <li>
+                        <span> {{ user.first_name }} </span>
+                    </li>
+                    <li>
+                        <span> {{ user.last_name }} </span>
+                    </li>
+                    <li>
+                        <span> {{ user.email }} </span>
+                    </li>
+                    <li>
+                        <span> {{ user.password }} </span>
+                    </li>
+                    <li>
+                        <span> {{ user.image }} </span>
+                    </li>
+                    <li>
+                        <img
+                            src="{{ user.image_url }}"
+                            class="card-img-top w-25 h-25 object-cover"
+                            alt="{{ user.username }}"
+                        />
+                    </li>
+                </ul>
 
-<h1>Welcome, {{ user.username }}</h1>
-<ul>
-    <li>
-        <span> {{ user.id }} </span>
-    </li>
-    <li>
-        <span> {{ user.first_name }} </span>
-    </li>
-    <li>
-        <span> {{ user.last_name }} </span>
-    </li>
-    <li>
-        <span> {{ user.email }} </span>
-    </li>
-    <li>
-        <span> {{ user.password }} </span>
-    </li>
-    <li>
-        <span> {{ user.image }} </span>
-    </li>
-    <li>
-        <img
-            src="{{ user.image_url }}"
-            class="card-img-top w-25 h-25 object-cover"
-            alt="{{ user.username }}"
-        />
-    </li>
-</ul>
+                <hr />
 
-<hr />
+                <h2>Your Books</h2>
+                <ul>
+                    {% for book in books %}
+                    <li>{{ book.name }} - {{ book.description }}</li>
+                    {% endfor %}
+                </ul>
 
-<h2>Your Books</h2>
-<ul>
-    {% for book in books %}
-    <li>{{ book.name }} - {{ book.description }}</li>
-    {% endfor %}
-</ul>
-
-<hr />
-<h2>Your Categories</h2>
-<ul>
-    {% for category in categories %}
-    <li>{{ category.name }}</li>
-    {% endfor %}
-</ul>
-
-<!--  -->
+                <hr />
+                <h2>Your Categories</h2>
+                <ul>
+                    {% for category in categories %}
+                    <li>{{ category.name }}</li>
+                    {% endfor %}
+                </ul>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}
