@@ -1,7 +1,6 @@
-from flask import Flask, render_template, redirect, url_for
-from flask_bootstrap import Bootstrap5
+from flask import Flask
 
-from flask_wtf import FlaskForm, CSRFProtect
+from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, EmailField, PasswordField, FileField
 from wtforms.validators import DataRequired, Length
 

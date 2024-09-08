@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 from flask_bootstrap import Bootstrap5
 from flask_restful import Resource, Api
 
-# con
+# configuration database
 from app.models import db
 from app.config import config_options
 
@@ -33,30 +33,30 @@ def create_app(config_name="prd"):
     api = Api(app)
 
     # Apps
-    # -1 -> Blogs
-    from app.blogs import blogs_blueprint
-
-    app.register_blueprint(blogs_blueprint)
-
-    # -2 -> Categories
-    from app.categories import categories_blueprint
-
-    app.register_blueprint(categories_blueprint)
-
-    # -3 -> Users
+    # -1 -> Users
     from app.user import users_blueprint
 
     app.register_blueprint(users_blueprint)
 
-    # -4 -> Home
+    # -2 -> Home
     from app.home import home_blueprint
 
     app.register_blueprint(home_blueprint)
 
+    # -3 -> Books
+    from app.books import books_blueprint
+
+    app.register_blueprint(books_blueprint)
+
+    # -4 -> Categories
+    from app.categories import categories_blueprint
+
+    app.register_blueprint(categories_blueprint)
+
     # # API
-    # # -1 -> Blogs
-    # api.add_resource(BlogsList, "/api/blogs")
-    # api.add_resource(BlogsResource, "/api/blogs/<int:id>")
+    # # -1 -> Books
+    # api.add_resource(BooksList, "/api/books")
+    # api.add_resource(BooksResource, "/api/books/<int:id>")
 
     # # -2 -> Categories
     # api.add_resource(CategoriesList, "/api/categories")
