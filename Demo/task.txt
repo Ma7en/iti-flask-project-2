@@ -1,0 +1,21 @@
+Flask Task
+
+We need to create a web application that helps us manage the books in a library in terms of 
+1- we have a landing page contains all the books in our library (display title , cover photo, show button) and a button for creating new book
+2- all book details should be saved to postgres database 
+	(title, cover photo, number of pages, description
+3- when I click show button it redirect to new page displays book detailed information
+And have 2 buttons one for edit , and other for delete 
+Hints
+- use flask wtf forms to implement the create, update functionality
+- use SQLAlchemy
+- use flask migrate package in your project 
+- Good frontend is a must
+- using MVT architecture while creating the project is a must 
+
+
+Deadline: Wednesday 11 sept.  4 pm Egypt time 
+
+
+Best of luck
+

@@ -1,0 +1,55 @@
+{% extends './base.html' %}
+
+<!-- content -->
+
+{% block content %}
+<!--  -->
+
+<h1>Welcome, {{ user.username }}</h1>
+<ul>
+    <li>
+        <span> {{ user.id }} </span>
+    </li>
+    <li>
+        <span> {{ user.first_name }} </span>
+    </li>
+    <li>
+        <span> {{ user.last_name }} </span>
+    </li>
+    <li>
+        <span> {{ user.email }} </span>
+    </li>
+    <li>
+        <span> {{ user.password }} </span>
+    </li>
+    <li>
+        <span> {{ user.image }} </span>
+    </li>
+    <li>
+        <img
+            src="{{ user.image_url }}"
+            class="card-img-top w-25 h-25 object-cover"
+            alt="{{ user.username }}"
+        />
+    </li>
+</ul>
+
+<hr />
+
+<h2>Your Blogs</h2>
+<ul>
+    {% for blog in blogs %}
+    <li>{{ blog.name }} - {{ blog.description }}</li>
+    {% endfor %}
+</ul>
+
+<hr />
+<h2>Your Categories</h2>
+<ul>
+    {% for category in categories %}
+    <li>{{ category.name }}</li>
+    {% endfor %}
+</ul>
+
+<!--  -->
+{% endblock %}

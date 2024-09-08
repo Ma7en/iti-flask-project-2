@@ -1,0 +1,80 @@
+{% extends './base.html' %}
+
+<!-- content -->
+{% block content %}
+
+<!--  -->
+{% if current_user.is_authenticated %}
+<div class="mb-3">
+    <a href="{{ url_for('categories.create')}}" class="btn btn-primary"
+        >Add New category</a
+    >
+</div>
+{% endif %}
+
+<h2>All Categories</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Show</th>
+            {% if current_user.is_authenticated %}
+            <th>Update</th>
+            <th>Delete</th>
+            {% endif %}
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for category in categories %}
+        <tr>
+            <td>{{category.id}}</td>
+            <td>{{category.name}}</td>
+            <td>{{category.image}}</td>
+            <td>
+                <a href="{{category.show_url}}" class="btn btn-info text-white"
+                    >Show</a
+                >
+            </td>
+
+            {% if current_user.is_authenticated and category.user_id ==
+            current_user.id %}
+            <td>
+                <a href="{{category.update_url}}" class="btn btn-success">
+                    Update
+                </a>
+            </td>
+            <td>
+                <form action="{{ category.delete_url }}" method="POST">
+                    <input
+                        type="submit"
+                        value="Delete"
+                        class="btn btn-danger"
+                    />
+                </form>
+            </td>
+            {% elif current_user.is_authenticated and category.user_id !=
+            current_user.id %}
+            <td>
+                <a href="" class="btn btn-success disabled"> Update </a>
+            </td>
+            <td>
+                <form action="" method="POST">
+                    <input
+                        type="submit"
+                        value="Delete"
+                        class="btn btn-danger disabled"
+                        disabled
+                    />
+                </form>
+            </td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends './base.html' %}
+
+<!-- footer -->
+{% block footer %}
+
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <a href="#" class="footer-logo">
+                <img
+                    src="{{url_for('static', filename='assets/images/bx/logo-light.svg')}}"
+                    alt="DevBlog's Logo"
+                    width="150"
+                    height="40"
+                    class="logo-light"
+                />
+                <img
+                    src="{{url_for('static', filename='assets/images/bx/logo-dark.svg')}}"
+                    alt="DevBlog's Logo"
+                    width="150"
+                    height="40"
+                    class="logo-dark"
+                />
+            </a>
+
+            <p class="footer-text">
+                Learn about Web accessibility, Web performance, and Database
+                management.
+            </p>
+        </div>
+
+        <div class="wrapper">
+            <p class="footer-title">Quick Links</p>
+
+            <ul>
+                <li>
+                    <a href="#" class="footer-link">Advertise with us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+            <p class="footer-title">Legal Stuff</p>
+
+            <ul>
+                <li>
+                    <a href="#" class="footer-link">Privacy Notice</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Cookie Policy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Terms Of Use</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="copyright">&copy; Copyright 2024 <a href="#">Mazen Saad</a></p>
+</footer>
+
+{% endblock %}

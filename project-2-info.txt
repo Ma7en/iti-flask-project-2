@@ -1,0 +1,282 @@
+
+# ubuntu
+virtualenv venv
+source venv/bin/activate 
+
+
+# create virtual env  windows
+virtualenv wvenv
+wvenv\Scripts\activate
+
+
+
+# intall packages 
+pip install flask 
+pip install flask-shell-ipython
+pip install -U Flask-SQLAlchemy
+pip install Flask-Migrate
+pip install psycopg2
+pip install psycopg2-binary
+pip install Flask-WTF
+pip install bootstrap-flask
+pip install flask-restful
+pip install Flask-Login
+
+
+
+
+
+
+# 
+1- create folder app 
+2- inside app folder create -> (__init__ app, config.py, models.py, app.py)
+2.1- edit file -> (config.py)
+2.1- edit file -> (config.py)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# create project
+0- create folder app 
+1- __init__.py -> (config SQLAlchemy - migrate - apps)
+2- models.py -> (columns SQLAlchemy)
+3- config.py -> (config db -> Development or Production)
+4- lab3.py -> app run (config db - run app)
+4.1- run postgres
+4.2- run flask db init
+5- edit model -> after -> flask db init
+    --> run -> db init -> before -> db.init_app(app)
+6- create folder blogs 
+    -> __init__.py
+        -> blueprint
+    -> views.py 
+        -> action
+7- directory -> templates 
+    -> base + index 
+8- edit __init__.py > app -> app.register
+
+# relation 
+9- create folder categories
+9.1- edit models -> (category)
+9.2- run migrate
+9.3- edit file __init__.py - categories -> ()
+9.4- edit file __init__.py - app -> ()
+
+
+
+
+# froms
+10- create file froms 
+10.1- edit __init__.py -> (bootstrap -)
+11- edit config -> (SECRET_KEY - init_app)
+12- edit views blogs (create - )
+13- edit file create.html -> (move to forms)
+14- 
+14- 
+
+
+
+# api 
+16- create folder api -> categories, blogs
+16.1- create file -> (views - seriailzers - parsers.py)
+16.2- edit file -> __init__.py -> app -> (api.add_resource)
+16.3- 
+
+
+
+
+
+
+# account 
+17- create file -> (__init__.py, views.py, forms.py)
+
+
+
+
+
+
+# home 
+18- create file -> (__init__.py, views.py, forms.py)
+
+
+
+
+
+# run project 
+cd app 
+export FLASK_APP=lab3
+flask run --debug 
+
+
+
+# run shell 
+export FLASK_APP=lab3
+flask shell 
+
+
+# postgres
+su - postgres 
+mazen@@1
+psql
+
+
+create user fayoum with password 'iti';
+
+alter user fayoum superuser;
+alter user fayoum createdb;
+
+
+psql -U fayoum -h localhost -p5432 -W -d postgres 
+iti
+
+create database iti_flask_project_2;
+
+
+
+# create db 
+cd app
+flask db init 
+flask db migrate -m 'iti flask project 2'
+flask db upgrade 
+
+
+
+# api 
+http://127.0.0.1:5000/api/blogs
+http://127.0.0.1:5000/api/categories
+
+
+
+# ubuntu 
+pip freeze > requirements.txt 
+pip install -r requirements.txt
+
+
+
+
+# windows 
+pip freeze > wrequirements.txt 
+pip install -r wrequirements.txt
+
+
+
+
+
+
+
+
+
+# =================================================================
+# =================================================================
+
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
+
+
+https://python-adv-web-apps.readthedocs.io/en/latest/flask_forms.html
+
+
+
+https://www.geeksforgeeks.org/how-to-add-authentication-to-your-app-with-flask-login/
+
+
+
+https://www.youtube.com/watch?v=Z0S0VVVoTpw
+https://www.youtube.com/watch?v=2dEM-s3mRLE
+
+
+
+
+
+
+
+# =================================================================
+# =================================================================
+
+# How to run this project
+
+# step 1:- 
+    - Delete any comment or print
+    - open terminal -> Make sure you are next to the app folder.
+    - Delete the migrations folder located inside the app folder
+
+
+
+# step 2:- create virtualenv next to the app folder
+
+virtualenv venv
+source venv/bin/activate 
+
+
+# step 3:- install packages 
+    # Through the packages
+        pip install flask 
+        pip install flask-shell-ipython
+        pip install -U Flask-SQLAlchemy
+        pip install Flask-Migrate
+        pip install psycopg2
+        pip install psycopg2-binary
+        pip install Flask-WTF
+        pip install bootstrap-flask
+        pip install flask-restful
+        pip install Flask-Login
+        
+    # or 
+        pip install -r requirements.txt
+
+
+
+
+# step 4:- create database 
+# open terminal and run this command
+
+    su - postgres 
+
+    # your password
+    psql
+
+    create user fayoum with password 'iti';
+
+    alter user fayoum superuser;
+    alter user fayoum createdb;
+    \q
+
+
+    psql -U fayoum -h localhost -p5432 -W -d postgres 
+    iti
+
+    create database iti_flask_lab3;
+
+
+
+# step 5:- Database configuration
+# open terminal and run this command
+# Make sure you are inside the app folder
+    flask db init 
+    flask db migrate -m 'create lab3 db'
+    flask db upgrade 
+
+
+
+# step 6:- Run Project
+# open terminal and run this command
+# Make sure you are inside the app folder
+    export FLASK_APP=lab3
+    flask run --debug 
+
+
+
