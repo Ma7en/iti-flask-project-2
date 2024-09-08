@@ -267,7 +267,7 @@ source venv/bin/activate
 # open terminal and run this command
 # Make sure you are inside the app folder
     flask db init 
-    flask db migrate -m 'create lab3 db'
+    flask db migrate -m 'iti flask project 2'
     flask db upgrade 
 
 
