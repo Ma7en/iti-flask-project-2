@@ -29,25 +29,25 @@
     </thead>
 
     <tbody>
-        {% for blog in blogs %}
+        {% for book in books %}
         <tr>
-            <td>{{blog.id}}</td>
-            <td>{{blog.name}}</td>
-            <td>{{blog.description }}</td>
-            <td>{{blog.image}}</td>
+            <td>{{book.id}}</td>
+            <td>{{book.name}}</td>
+            <td>{{book.description }}</td>
+            <td>{{book.image}}</td>
             <td>
-                <a href="{{blog.show_url}}" class="btn btn-info text-white">
+                <a href="{{book.show_url}}" class="btn btn-info text-white">
                     Show
                 </a>
             </td>
 
-            {% if current_user.is_authenticated and blog.user_id ==
+            {% if current_user.is_authenticated and book.user_id ==
             current_user.id %}
             <td>
-                <a href="{{blog.update_url}}" class="btn btn-success">Update</a>
+                <a href="{{book.update_url}}" class="btn btn-success">Update</a>
             </td>
             <td>
-                <form action="{{ blog.delete_url }}" method="POST">
+                <form action="{{ book.delete_url }}" method="POST">
                     <input
                         type="submit"
                         value="Delete"
@@ -55,7 +55,7 @@
                     />
                 </form>
             </td>
-            {% elif current_user.is_authenticated and blog.user_id !=
+            {% elif current_user.is_authenticated and book.user_id !=
             current_user.id %}
             <td>
                 <a href="" class="btn btn-success disabled">Update</a>

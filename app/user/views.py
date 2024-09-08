@@ -17,7 +17,7 @@ login_manager = LoginManager()
 
 # app db
 from app.models import db, User
-from app.models import Blogs
+from app.models import Books
 from app.models import Categories
 
 # user
@@ -32,10 +32,10 @@ from app.user.register_forms import RegisterForm
 @login_required
 def user_profile():
     user = current_user
-    blogs = Blogs.query.filter_by(user_id=user.id).all()
+    books = Books.query.filter_by(user_id=user.id).all()
     categories = Categories.query.filter_by(user_id=user.id).all()
     return render_template(
-        "user/profile.html", user=user, blogs=blogs, categories=categories
+        "user/profile.html", user=user, books=books, categories=categories
     )
 
 

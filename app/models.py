@@ -99,16 +99,16 @@ class Books(db.Model):
 
     @property
     def image_url(self):
-        return url_for("static", filename=f"assets/images/blogs/{self.image}")
+        return url_for("static", filename=f"assets/images/books/{self.image}")
 
     @property
     def show_url(self):
-        return url_for("blogs.show", id=self.id)
+        return url_for("books.show", id=self.id)
 
     @property
     def update_url(self):
-        return url_for("blogs.update", id=self.id)
+        return url_for("books.update", id=self.id)
 
     @property
     def delete_url(self):
-        return url_for("blogs.delete", id=self.id)
+        return url_for("books.delete", id=self.id)

@@ -7,7 +7,7 @@ category_serializers = {
     # "blogs": fields.List(fields.Nested(blogs_serializers)),  # list of blogs related to this category.
 }
 
-blogs_serializers = {
+books_serializers = {
     "id": fields.Integer,
     "name": fields.String,
     "description": fields.String,

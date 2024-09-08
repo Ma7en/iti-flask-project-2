@@ -12,7 +12,7 @@ from app.config import config_options
 from app.user import login_manager
 
 # API
-# from app.blogs.api.views import BlogsList, BlogsResource
+# from app.books.api.views import BooksList, BooksResource
 # from app.categories.api.views import CategoriesList, CategoriesResource
 
 

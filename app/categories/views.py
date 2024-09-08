@@ -1,6 +1,9 @@
 from flask import render_template, request, redirect, url_for, Blueprint
+
 from werkzeug.utils import secure_filename
 import os, datetime
+
+# user
 from flask_login import login_required, current_user
 
 # db
@@ -12,7 +15,7 @@ from app.categories.forms import CategoriesForm
 
 
 # =================================================================================================
-# *** list categories ***
+# *** List Categories ***
 @categories_blueprint.route("/", endpoint="list")
 def categories_list():
     categories = Categories.query.all()
@@ -20,20 +23,7 @@ def categories_list():
 
 
 # =================================================================================================
-# *** create category ***
-# @categories_blueprint.route("create", endpoint="create", methods=["GET", "POST"])
-# def categories_create():
-#     if request.method == "POST":
-#         category = Categories(
-#             name=request.form["name"],
-#             image=request.form["image"],
-#         )
-#         db.session.add(category)
-#         db.session.commit()
-#         return redirect(category.show_url)
-#     return render_template("categories/forms/create.html")
-
-
+# *** Create Category ***
 @categories_blueprint.route("create", endpoint="create", methods=["GET", "POST"])
 @login_required
 def categories_create():
@@ -49,21 +39,7 @@ def categories_create():
                 image = form.image.data
                 image_name = secure_filename(image.filename)
                 con_name = f"{date.day}-{date.hour}-{date.minute}-{image_name}"
-                image.save(
-                    os.path.join("static/assets/images/categories/", con_name)
-                )  # image_name
-
-                # data = dict(request.form)
-                # del data["csrf_token"]
-                # del data["submit"]
-
-                # data["image"] = con_name
-                # category = Categories(**data)
-
-            # print("=============================")
-            # print("current user")
-            # print(current_user)
-            # print("=============================")
+                image.save(os.path.join("static/assets/images/categories/", con_name))
 
             category = Categories(
                 name=form.name.data,
@@ -79,23 +55,7 @@ def categories_create():
 
 
 # =================================================================================================
-# *** update category ***
-# @categories_blueprint.route(
-#     "<int:id>/update", endpoint="update", methods=["GET", "POST"]
-# )
-# def categories_update(id):
-#     category = db.get_or_404(Categories, id)
-#     if request.method == "POST":
-#         categoryobj = category
-#         categoryobj.name = request.form["name"]
-#         categoryobj.image = request.form["image"]
-#         db.session.add(categoryobj)
-#         db.session.commit()
-#         return redirect(url_for("categories.list"))
-
-#     return render_template("categories/forms/update.html", category=category)
-
-
+# *** Update Category ***
 @categories_blueprint.route(
     "<int:id>/update", endpoint="update", methods=["GET", "POST"]
 )
@@ -123,7 +83,8 @@ def categories_update(id):
                 image.save(os.path.join("static/assets/images/categories/", con_name))
 
             category.name = form.name.data
-            category.image = con_name  # Save new image name
+            category.image = con_name
+
             db.session.commit()
 
             return redirect(category.show_url)
@@ -132,7 +93,7 @@ def categories_update(id):
 
 
 # =================================================================================================
-# *** show details category ***
+# *** Show Details Category ***
 @categories_blueprint.route("<int:id>", endpoint="show")
 def category_show(id):
     category = db.get_or_404(Categories, id)
@@ -140,7 +101,7 @@ def category_show(id):
 
 
 # =================================================================================================
-# *** delete category ***
+# *** Delete Category ***
 @categories_blueprint.route("<int:id>/delete", endpoint="delete", methods=["POST"])
 @login_required
 def categories_delete(id):

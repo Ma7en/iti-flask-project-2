@@ -38,11 +38,11 @@
     </div>
 </div>
 
-<h2>Blog in this track</h2>
+<h2>Book in this track</h2>
 
-{% for btc in category.blogs %}
+{% for btc in category.books %}
 <li>
-    <strong>Blog: </strong>
+    <strong>Book: </strong>
     <a href="{{btc.show_url}}"> {{btc.name}} </a>
 </li>
 {% endfor %}
