@@ -9,13 +9,24 @@
                 <!--  -->
                 <div class="content">
                     {% if current_user.is_authenticated %}
-                    <div class="mb-3">
-                        <a
-                            href="{{ url_for('books.create')}}"
-                            class="btn btn-primary"
-                        >
-                            Add New book
-                        </a>
+                    <div class="d-flex">
+                        <div class="mb-3 me-3">
+                            <a
+                                href="{{ url_for('books.create') }}"
+                                class="btn btn-primary"
+                            >
+                                Add New Book
+                            </a>
+                        </div>
+
+                        <div class="mb-3">
+                            <a
+                                href="{{ url_for('categories.create') }}"
+                                class="btn btn-primary"
+                            >
+                                Add New Category
+                            </a>
+                        </div>
                     </div>
                     {% endif %}
 

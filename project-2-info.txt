@@ -259,7 +259,7 @@ source venv/bin/activate
     psql -U fayoum -h localhost -p5432 -W -d postgres 
     iti
 
-    create database iti_flask_lab3;
+    create database iti_flask_project_2;
 
 
 
@@ -291,13 +291,15 @@ source venv/bin/activate
 
 # users 
 
-Mazen
+Mazen Saad
+mazen1
 mazen1@gmail.com
 mazen@@1
 
 
-Reem
-reem1@gmail.com
+Reem Mohammed
+reem2
+reem2@gmail.com
 reemreem@@1
 
 

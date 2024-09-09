@@ -689,6 +689,7 @@ header .btn-group {
 
 .blog-card-banner {
     display: none;
+    max-height: 300px;
 }
 
 .blog-content-wrapper {
@@ -881,6 +882,7 @@ footer .wrapper {
 
     .blog-banner-img {
         width: 100%;
+        /* max-height: 250px; */
         height: 100%;
         object-fit: cover;
     }
