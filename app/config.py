@@ -21,8 +21,13 @@ class ProductionConfig(Config):
     )
     SQLALCHEMY_DATABASE_URI = "postgres://default:HTpyB9XKVg0m@ep-delicate-mouse-a4xukrvs.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
     SQLALCHEMY_DATABASE_URI = os.getenv(
-        "postgres://default:HTpyB9XKVg0m@ep-delicate-mouse-a4xukrvs.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+        "postgresql://default:HTpyB9XKVg0m@ep-delicate-mouse-a4xukrvs.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
     )
+    SQLALCHEMY_DATABASE_URI = os.getenv(
+        "Database_URL",
+        "postgresql://default:HTpyB9XKVg0m@ep-delicate-mouse-a4xukrvs.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+    )
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     UPLOADED_PHOTOS_DEST = "app/static/"
 
