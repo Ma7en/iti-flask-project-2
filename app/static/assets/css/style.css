@@ -454,6 +454,11 @@ header .btn-group {
     min-height: 80dvh;
 }
 
+.categories table td {
+    background-color: var(--background-secondary);
+    color: var(--foreground-primary);
+}
+
 /*-----------------------------------*\ 
     #Categories create SECTION
 \*-----------------------------------*/
@@ -511,6 +516,73 @@ header .btn-group {
 /*-----------------------------------*\ 
     #books SECTION
 \*-----------------------------------*/
+.books {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.books .container {
+    min-height: 80dvh;
+}
+
+.books table td {
+    background-color: var(--background-secondary);
+    color: var(--foreground-primary);
+}
+
+/*-----------------------------------*\ 
+    #books create SECTION
+\*-----------------------------------*/
+.book-create {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.book-create .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.book-create .content h2 {
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+    #books update SECTION
+\*-----------------------------------*/
+.book-update {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.book-update .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.book-update .content h2 {
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+    #books show SECTION
+\*-----------------------------------*/
+.book-show {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.book-show .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.book-show .content h2 {
+    text-transform: capitalize;
+}
 
 /*-----------------------------------*\ 
     #HERO SECTION

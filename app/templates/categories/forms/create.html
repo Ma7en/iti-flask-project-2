@@ -8,8 +8,15 @@
             <div class="container py-5">
                 <!--  -->
                 <div class="content">
-                    <div>
-                        <h2 style="text-align: center">Add new category</h2>
+                    <div class="mb-5 d-flex justify-content-between">
+                        <h2 class="">Add new category</h2>
+
+                        <a
+                            href="{{ url_for('categories.list') }}"
+                            class="btn btn-primary"
+                        >
+                            Back to all categories
+                        </a>
                     </div>
 
                     {{ render_form(form) }}

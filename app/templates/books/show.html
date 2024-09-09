@@ -4,61 +4,63 @@
 {% block content %}
 <main>
     <section>
-        <div class="">
+        <div class="book-show">
             <div class="container py-5">
                 <!--  -->
-                <div class="mb-3 d-flex justify-content-between">
-                    <h2 class="">Book Info</h2>
+                <div class="content">
+                    <div class="mb-3 d-flex justify-content-between">
+                        <h2 class="">Book Info</h2>
 
-                    <a
-                        href="{{ url_for('books.list') }}"
-                        class="btn btn-primary"
-                    >
-                        Back to all Books
-                    </a>
-                </div>
+                        <a
+                            href="{{ url_for('books.list') }}"
+                            class="btn btn-primary"
+                        >
+                            Back to all Books
+                        </a>
+                    </div>
 
-                <div class="card">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="h-100">
-                                <img
-                                    src="{{ book.image_url }}"
-                                    class="card-img-top w-100 h-100 object-cover"
-                                    alt="{{ book.name }}"
-                                />
+                    <div class="">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="h-100">
+                                    <img
+                                        src="{{ book.image_url }}"
+                                        class="card-img-top w-100 h-100 object-cover"
+                                        alt="{{ book.name }}"
+                                    />
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-7">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <strong class="text-capitalize"
-                                        >Name:
-                                    </strong>
-                                    {{book.name}}
-                                </h5>
-                                <p>
-                                    <strong class="text-capitalize"
-                                        >Image:
-                                    </strong>
-                                    {{book.image_url}}
-                                </p>
-                                <p class="card-text">
-                                    <strong class="text-capitalize"
-                                        >category:
-                                    </strong>
-                                    <a href="{{book.category.show_url}}">
-                                        {{book.category_id}} -
-                                        {{book.category.name}}
-                                    </a>
-                                </p>
-                                <p class="card-text">
-                                    <strong class="text-capitalize"
-                                        >description:
-                                    </strong>
-                                    {{book.description}}
-                                </p>
+                            <div class="col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <strong class="text-capitalize"
+                                            >Name:
+                                        </strong>
+                                        {{book.name}}
+                                    </h5>
+                                    <p>
+                                        <strong class="text-capitalize"
+                                            >Image:
+                                        </strong>
+                                        {{book.image_url}}
+                                    </p>
+                                    <p class="card-text">
+                                        <strong class="text-capitalize"
+                                            >category:
+                                        </strong>
+                                        <a href="{{book.category.show_url}}">
+                                            {{book.category_id}} -
+                                            {{book.category.name}}
+                                        </a>
+                                    </p>
+                                    <p class="card-text">
+                                        <strong class="text-capitalize"
+                                            >description:
+                                        </strong>
+                                        {{book.description}}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

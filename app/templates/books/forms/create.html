@@ -4,14 +4,23 @@
 {% block content %}
 <main>
     <section>
-        <div class="">
+        <div class="book-create">
             <div class="container py-5">
                 <!--  -->
-                <div>
-                    <h1 style="text-align: center">Add new Book</h1>
-                </div>
+                <div class="content">
+                    <div class="mb-5 d-flex justify-content-between">
+                        <h2 class="">Add new Book</h2>
 
-                {{ render_form(form) }}
+                        <a
+                            href="{{ url_for('books.list') }}"
+                            class="btn btn-primary"
+                        >
+                            Back to all Books
+                        </a>
+                    </div>
+
+                    {{ render_form(form) }}
+                </div>
                 <!--  -->
             </div>
         </div>

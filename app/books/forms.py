@@ -16,7 +16,9 @@ class BooksForm(FlaskForm):
         "Description", validators=[DataRequired(), Length(2, 5000)]
     )
     image = FileField("Image", validators=[])
-    pages = IntegerField("Pages", validators=[DataRequired(), NumberRange(min=1)])
+    pages = IntegerField(
+        "Number Of Pages", validators=[DataRequired(), NumberRange(min=1)]
+    )
     category_id = SelectField("Categories", validators=[DataRequired()], choices=[])
     submit = SubmitField("Submit")
 
