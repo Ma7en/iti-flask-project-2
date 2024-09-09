@@ -12,12 +12,21 @@
                     <div class="mb-5 d-flex justify-content-between">
                         <h2 class="">category Info</h2>
 
+                        {% if current_user.is_authenticated %}
                         <a
                             href="{{ url_for('categories.list') }}"
                             class="btn btn-primary"
                         >
                             Back to all categories
                         </a>
+                        {% else %}
+                        <a
+                            href="{{ url_for('home.home') }}"
+                            class="btn btn-primary"
+                        >
+                            Back To Home
+                        </a>
+                        {% endif %}
                     </div>
 
                     <div class="mb-5">
@@ -40,25 +49,71 @@
                                         </strong>
                                         {{category.name}}
                                     </h5>
+
                                     <p>
                                         <strong class="text-capitalize"
                                             >Image:
                                         </strong>
                                         {{category.image_url}}
                                     </p>
+
+                                    {% if current_user.is_authenticated and
+                                    category.user_id == current_user.id %}
+                                    <div class="d-flex gap-5 mt-5">
+                                        <a
+                                            href="{{ category.update_url }}"
+                                            class="btn btn-success"
+                                        >
+                                            Update
+                                        </a>
+
+                                        <form
+                                            action="{{ category.delete_url }}"
+                                            method="POST"
+                                        >
+                                            <input
+                                                type="submit"
+                                                value="Delete"
+                                                class="btn btn-danger"
+                                            />
+                                        </form>
+                                    </div>
+                                    {% elif current_user.is_authenticated and
+                                    category.user_id != current_user.id %}
+                                    <div class="d-flex gap-5 mt-5">
+                                        <a
+                                            href=""
+                                            class="btn btn-success disabled"
+                                        >
+                                            Update
+                                        </a>
+
+                                        <form action="" method="POST">
+                                            <input
+                                                type="submit"
+                                                value="Delete"
+                                                class="btn btn-danger disabled"
+                                                disabled
+                                            />
+                                        </form>
+                                    </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="blog">
-                        <h2 class="h2">Book in this track</h2>
+                        <h2 class="h2">Books in this category</h2>
 
                         {% for btc in category.books %}
-                        <li>
-                            <strong>Book: </strong>
-                            <a href="{{btc.show_url}}"> {{btc.name}} </a>
-                        </li>
+                        <a href="{{btc.show_url}}" class="topic-btn my-3">
+                            <div class="icon-box">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </div>
+
+                            <p>{{btc.name}}</p>
+                        </a>
                         {% endfor %}
                     </div>
                 </div>
