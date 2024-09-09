@@ -21,3 +21,10 @@ def home():
 @home_blueprint.route("/aboutme", endpoint="about_me")
 def aboutme():
     return render_template("home/about-me.html")
+
+
+# =================================================================================================
+# *** Contact ***
+@home_blueprint.route("/contact", endpoint="contact")
+def contact():
+    return render_template("home/contact.html")

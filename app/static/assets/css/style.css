@@ -601,6 +601,20 @@ header .btn-group {
 /*-----------------------------------*\ 
     #HERO SECTION
 \*-----------------------------------*/
+.contact-me {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.contact-me .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+/*-----------------------------------*\ 
+    #HERO SECTION
+\*-----------------------------------*/
 
 .hero {
     background: var(--background-primary);
