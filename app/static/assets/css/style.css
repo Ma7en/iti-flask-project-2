@@ -368,8 +368,83 @@ header .btn-group {
 }
 
 /*-----------------------------------*\ 
+#Register SECTION
+\*-----------------------------------*/
+
+.register {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.register .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.register .title h2 {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+#Login SECTION
+\*-----------------------------------*/
+
+.login {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.login .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.login .title h2 {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+#Profile SECTION
+\*-----------------------------------*/
+
+.profile {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.profile .container {
+    min-height: 80dvh;
+}
+
+.profile .container .content .user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.profile .container .content .user h2 {
+    margin-bottom: 20px;
+}
+
+.profile .container .content .user span {
+    color: var(--accent);
+    font-weight: inherit;
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
     #HERO SECTION
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .hero {
     background: var(--background-primary);
@@ -585,6 +660,7 @@ footer .wrapper {
     text-align: center;
     padding: 1rem;
     border-top: 1px solid var(--action-primary);
+    margin-bottom: 0;
 }
 
 .copyright a {

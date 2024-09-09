@@ -4,54 +4,84 @@
 {% block content %}
 <main>
     <section>
-        <div class="">
+        <div class="profile">
             <div class="container py-5">
                 <!--  -->
-                <h1>Welcome, {{ user.username }}</h1>
-                <ul>
-                    <li>
-                        <span> {{ user.id }} </span>
-                    </li>
-                    <li>
-                        <span> {{ user.first_name }} </span>
-                    </li>
-                    <li>
-                        <span> {{ user.last_name }} </span>
-                    </li>
-                    <li>
-                        <span> {{ user.email }} </span>
-                    </li>
-                    <li>
-                        <span> {{ user.password }} </span>
-                    </li>
-                    <li>
-                        <span> {{ user.image }} </span>
-                    </li>
-                    <li>
-                        <img
-                            src="{{ user.image_url }}"
-                            class="card-img-top w-25 h-25 object-cover"
-                            alt="{{ user.username }}"
-                        />
-                    </li>
-                </ul>
+                <div class="content">
+                    <div class="user">
+                        <div class="left">
+                            <h2 class="h2">
+                                Welcome, <span> {{ user.username }} </span>
+                            </h2>
 
-                <hr />
+                            <div class="info">
+                                <a class="topic-btn">
+                                    <div class="icon-box">
+                                        <ion-icon
+                                            name="server-outline"
+                                        ></ion-icon>
+                                    </div>
 
-                <h2>Your Books</h2>
-                <ul>
-                    {% for book in books %}
-                    <li>{{ book.name }} - {{ book.description }}</li>
-                    {% endfor %}
-                </ul>
+                                    <p>{{ user.id }}</p>
+                                </a>
 
-                <hr />
-                <h2>Your Categories</h2>
-                <ul>
-                    {% for category in categories %}
-                    <li>{{ category.name }}</li>
-                    {% endfor %}
-                </ul>
+                                <a class="topic-btn">
+                                    <div class="icon-box">
+                                        <ion-icon
+                                            name="person-circle-outline"
+                                        ></ion-icon>
+                                    </div>
+
+                                    <p>{{ user.username }}</p>
+                                </a>
+
+                                <a
+                                    href="mailto:{{ user.email }}"
+                                    class="topic-btn"
+                                >
+                                    <div class="icon-box">
+                                        <ion-icon
+                                            name="mail-outline"
+                                        ></ion-icon>
+                                    </div>
+
+                                    <p>{{ user.email }}</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="pattern-bg"></div>
+                            <div class="img-box">
+                                <img
+                                    src="{{ user.image_url }}"
+                                    alt="{{ user.username }}"
+                                    class="hero-img"
+                                />
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-user blog">
+                        <h2 class="h2">Your Books</h2>
+                        <ul>
+                            {% for book in books %}
+                            <li>{{ book.name }} - {{ book.description }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="category-user blog">
+                        <h2 class="h2">Your Categories</h2>
+                        <ul>
+                            {% for category in categories %}
+                            <li>{{ category.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
                 <!--  -->
             </div>
         </div>
