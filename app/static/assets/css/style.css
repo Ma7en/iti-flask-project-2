@@ -709,6 +709,10 @@ header .btn-group {
     color: var(--action-secondary);
 }
 
+.blog-topic a {
+    color: var(--action-secondary);
+}
+
 .blog-card .h3 {
     line-height: 1.4;
     margin-bottom: 1rem;

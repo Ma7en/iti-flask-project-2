@@ -5,6 +5,9 @@ import os, datetime
 # flask login
 from flask_login import login_required, current_user
 
+# db
+from app.models import db, Books, Categories
+
 # app home
 from app.home import home_blueprint
 
@@ -13,7 +16,12 @@ from app.home import home_blueprint
 # *** Home ***
 @home_blueprint.route("/", endpoint="home")
 def home():
-    return render_template("home/home.html")
+    books = Books.query.all()
+    categories = Categories.query.all()
+    # print("================================")
+    # print("Books:", books)
+    # print("================================")
+    return render_template("home/home.html", books=books, categories=categories)
 
 
 # =================================================================================================

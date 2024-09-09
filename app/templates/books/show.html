@@ -11,12 +11,21 @@
                     <div class="mb-3 d-flex justify-content-between">
                         <h2 class="">Book Info</h2>
 
+                        {% if current_user.is_authenticated %}
                         <a
                             href="{{ url_for('books.list') }}"
                             class="btn btn-primary"
                         >
                             Back to all Books
                         </a>
+                        {% else %}
+                        <a
+                            href="{{ url_for('home.home') }}"
+                            class="btn btn-primary"
+                        >
+                            Back To Home
+                        </a>
+                        {% endif %}
                     </div>
 
                     <div class="">
@@ -39,12 +48,14 @@
                                         </strong>
                                         {{book.name}}
                                     </h5>
+
                                     <p>
                                         <strong class="text-capitalize"
                                             >Image:
                                         </strong>
                                         {{book.image_url}}
                                     </p>
+
                                     <p class="card-text">
                                         <strong class="text-capitalize"
                                             >category:
@@ -54,12 +65,51 @@
                                             {{book.category.name}}
                                         </a>
                                     </p>
+
                                     <p class="card-text">
                                         <strong class="text-capitalize"
                                             >description:
                                         </strong>
                                         {{book.description}}
                                     </p>
+
+                                    {% if current_user.is_authenticated and
+                                    book.user_id == current_user.id %}
+                                    <div class="d-flex gap-5 mt-5">
+                                        <a
+                                            href="{{book.update_url}}"
+                                            class="btn btn-success"
+                                        >
+                                            Update
+                                        </a>
+
+                                        <form
+                                            action="{{ book.delete_url }}"
+                                            method="POST"
+                                        >
+                                            <input
+                                                type="submit"
+                                                value="Delete"
+                                                class="btn btn-danger"
+                                            />
+                                        </form>
+                                    </div>
+                                    {% elif current_user.is_authenticated and
+                                    book.user_id != current_user.id %}
+
+                                    <a href="" class="btn btn-success disabled">
+                                        Update
+                                    </a>
+
+                                    <form action="" method="POST">
+                                        <input
+                                            type="submit"
+                                            value="Delete"
+                                            class="btn btn-danger disabled"
+                                            disabled
+                                        />
+                                    </form>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

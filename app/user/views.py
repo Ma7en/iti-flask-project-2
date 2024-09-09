@@ -27,7 +27,7 @@ from app.user.register_forms import RegisterForm
 
 
 # =================================================================================================
-# *** Current User ***
+# *** Profile Current User ***
 @users_blueprint.route("profile", endpoint="profile", methods=["GET", "POST"])
 @login_required
 def user_profile():
