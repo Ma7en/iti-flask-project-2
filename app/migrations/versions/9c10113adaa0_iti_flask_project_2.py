@@ -1,8 +1,8 @@
 """iti flask project 2
 
-Revision ID: bcdb1fef821d
+Revision ID: 9c10113adaa0
 Revises: 
-Create Date: 2024-09-09 16:32:42.518611
+Create Date: 2024-09-09 19:16:04.175653
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'bcdb1fef821d'
+revision = '9c10113adaa0'
 down_revision = None
 branch_labels = None
 depends_on = None

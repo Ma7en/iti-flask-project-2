@@ -646,7 +646,8 @@ header .btn-group {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    /* gap: 15px; */
+    gap: 0px;
     text-align: center;
 }
 
@@ -1125,7 +1126,8 @@ footer .wrapper {
 
     .hero .btn-group {
         justify-content: start;
-        gap: 30px;
+        /* gap: 30px; */
+        gap: 0px;
     }
 
     .hero .right {
