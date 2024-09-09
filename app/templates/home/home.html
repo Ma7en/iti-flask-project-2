@@ -1,24 +1,31 @@
 {% extends './base.html' %}
 
 <!-- content -->
-
 {% block content %}
+<!-- style -->
+<style>
+    .hero .pattern-bg {
+        background: url("{{ url_for('static', filename='assets/images/hero/pattern.png') }}");
+    }
+</style>
 
 <!-- Hero Section -->
 <div class="hero">
     <div class="container">
         <div class="left">
             <h1 class="h1">
-                Hi, I'm <b>Julia&nbsp;Walker</b>. <br />Web Developer
+                <!-- Hi, I'm <b>Julia&nbsp;Walker</b>. <br />Web Developer -->
+                Welcome to <b>The DevBlog Library</b>
             </h1>
 
             <p class="h3">
-                Specialized in <abbr title="Accessibility">a11y</abbr>
-                and Core Web Vitals
+                <!-- Specialized in <abbr title="Accessibility">a11y</abbr>
+                and Core Web Vitals -->
+                Explore the best books in various fields
             </p>
 
             <div class="btn-group">
-                <a href="#" class="btn btn-primary">Contact Me</a>
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
                 <a href="#" class="btn btn-secondary">About Me</a>
             </div>
         </div>
@@ -27,7 +34,7 @@
             <div class="pattern-bg"></div>
             <div class="img-box">
                 <img
-                    src="{{url_for('static', filename='assets/images/hero/hero.png')}}"
+                    src="{{ url_for('static', filename='assets/images/hero/hero-book.png') }}"
                     alt="Julia Walker"
                     class="hero-img"
                 />
@@ -53,7 +60,7 @@
                     <div class="blog-card-banner">
                         <!-- /src="./assets/images/blog-1.png" -->
                         <img
-                            src="{{url_for('static', filename='assets/images/blog/blog-1.png')}}"
+                            src="{{ url_for('static', filename='assets/images/blog/blog-1.png') }}"
                             alt="Building microservices with Dropwizard, MongoDB & Docker"
                             width="250"
                             class="blog-banner-img"
@@ -82,7 +89,7 @@
                         <div class="wrapper-flex">
                             <div class="profile-wrapper">
                                 <img
-                                    src="{{url_for('static', filename='assets/images/author/author.png')}}"
+                                    src="{{ url_for('static', filename='assets/images/author/author.png') }}"
                                     alt="Julia Walker"
                                     width="50"
                                 />

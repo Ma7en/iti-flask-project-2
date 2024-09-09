@@ -275,7 +275,7 @@ source venv/bin/activate
 # step 6:- Run Project
 # open terminal and run this command
 # Make sure you are inside the app folder
-    export FLASK_APP=lab3
+    export FLASK_APP=app
     flask run --debug 
 
 
