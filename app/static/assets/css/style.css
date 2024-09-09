@@ -443,6 +443,76 @@ header .btn-group {
 }
 
 /*-----------------------------------*\ 
+    #Categories SECTION
+\*-----------------------------------*/
+.categories {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.categories .container {
+    min-height: 80dvh;
+}
+
+/*-----------------------------------*\ 
+    #Categories create SECTION
+\*-----------------------------------*/
+.category-create {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.category-create .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.category-create .content h2 {
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+    #Categories update SECTION
+\*-----------------------------------*/
+.category-update {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.category-update .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.category-update .content h2 {
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+    #Categories show SECTION
+\*-----------------------------------*/
+.category-show {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.category-show .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.category-show .content h2 {
+    text-transform: capitalize;
+}
+
+/*-----------------------------------*\ 
+    #books SECTION
+\*-----------------------------------*/
+
+/*-----------------------------------*\ 
     #HERO SECTION
 \*-----------------------------------*/
 
