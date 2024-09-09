@@ -1,0 +1,41 @@
+{% extends './base.html' %}
+
+<!-- content -->
+{% block content %}
+<main>
+    <section>
+        <div class="about-me">
+            <div class="container py-5">
+                <!--  -->
+                <div class="content">
+                    <div class="left text-center">
+                        <h1 class="h1">
+                            <!-- Hi, I'm <b>Julia&nbsp;Walker</b>. <br />Web Developer -->
+                            Welcome to <b>The DevBlog Library</b>
+                        </h1>
+
+                        <p class="h3">
+                            <!-- Specialized in <abbr title="Accessibility">a11y</abbr>
+                            and Core Web Vitals -->
+                            Explore the best books in various fields
+                        </p>
+
+                        <div class="btn-group">
+                            <a
+                                href="{{ url_for('home.home') }}"
+                                class="btn btn-secondary"
+                            >
+                                Home
+                            </a>
+                            <a href="#contact" class="btn btn-primary">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

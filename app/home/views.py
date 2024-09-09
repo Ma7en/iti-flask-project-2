@@ -14,3 +14,10 @@ from app.home import home_blueprint
 @home_blueprint.route("/", endpoint="home")
 def home():
     return render_template("home/home.html")
+
+
+# =================================================================================================
+# *** About Me ***
+@home_blueprint.route("/aboutme", endpoint="about_me")
+def aboutme():
+    return render_template("home/about-me.html")

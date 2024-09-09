@@ -587,6 +587,20 @@ header .btn-group {
 /*-----------------------------------*\ 
     #HERO SECTION
 \*-----------------------------------*/
+.about-me {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.about-me .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+/*-----------------------------------*\ 
+    #HERO SECTION
+\*-----------------------------------*/
 
 .hero {
     background: var(--background-primary);
@@ -628,7 +642,7 @@ header .btn-group {
 
 /*-----------------------------------*\ 
     #BLOG SECTION
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .main {
     background: var(--background-secondary);
