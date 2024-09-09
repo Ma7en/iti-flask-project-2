@@ -365,6 +365,47 @@ https://www.jumia.com.eg/ar/generic-a-brief-history-of-time-32588739.html
 
 
 
+
+
+{
+    "builds": [
+        {
+            "src": "app/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app/app.py"
+        }
+    ]
+}
+
+
+
+
+
+
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
+    ]
+}
+
+
+
+
 # =================================================================
 # =================================================================
 
