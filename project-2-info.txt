@@ -280,3 +280,247 @@ source venv/bin/activate
 
 
 
+
+
+
+
+
+# =================================================================
+# =================================================================
+
+
+# users 
+
+Mazen
+mazen1@gmail.com
+mazen@@1
+
+
+Reem
+reem1@gmail.com
+reemreem@@1
+
+
+
+
+
+# =================================================================
+# =================================================================
+
+# Information about categories and books
+
+
+1. التصنيف: Fiction (خيال)
+
+book-1
+الكتب:
+1984
+عدد الصفحات:
+328
+الوصف:
+عربي: 
+رواية ديستوبية تتناول موضوعات الحكومة الشمولية والمراقبة والتحكم في الأفكار.
+إنجليزي: 
+A dystopian novel that explores themes of totalitarian government, surveillance, and thought control.
+
+الرابط:
+https://www.amazon.com/1984-George-Orwell-Eighty-Four-Paperback/dp/605746222X
+
+
+2. التصنيف: History (تاريخ)
+Guns, Germs, and Steel
+
+عدد الصفحات:
+480
+الوصف:
+عربي:
+دراسة تحليلية لتطور الحضارات عبر التاريخ باستخدام أسلحة وجراثيم وتقنيات.
+إنجليزي: 
+An analytical study of the evolution of civilizations throughout history using weapons, germs, and technology.
+الرابط: 
+https://brownbagbooks.biz/products/guns-germs-and-steel
+
+
+
+3. التصنيف: Science (علوم)
+
+A Brief History of Time
+عدد الصفحات:
+212
+الوصف:
+عربي: 
+استكشاف علمي للزمن، الكون، والثقوب السوداء، من منظور علمي وفلسفي.
+إنجليزي: 
+A scientific exploration of time, the universe, and black holes, from a scientific and philosophical perspective.
+الرابط: 
+https://www.jumia.com.eg/ar/generic-a-brief-history-of-time-32588739.html
+
+
+
+
+
+
+
+
+
+# =================================================================
+# =================================================================
+
+1. التصنيف: Fiction (خيال)
+1984
+
+عدد الصفحات: 328
+الوصف:
+عربي: رواية ديستوبية تتناول موضوعات الحكومة الشمولية والمراقبة والتحكم في الأفكار.
+إنجليزي: A dystopian novel that explores themes of totalitarian government, surveillance, and thought control.
+الرابط: 1984
+Brave New World
+
+عدد الصفحات: 268
+الوصف:
+عربي: قصة مستقبلية عن مجتمع يتحكم في الأفراد من خلال التكنولوجيا والتحفيزات الكيميائية.
+إنجليزي: A futuristic story about a society where individuals are controlled through technology and chemical stimuli.
+الرابط: Brave New World
+To Kill a Mockingbird
+
+عدد الصفحات: 281
+الوصف:
+عربي: رواية كلاسيكية تتناول قضايا العنصرية والعدالة في أمريكا الجنوبية.
+إنجليزي: A classic novel addressing issues of racism and justice in the American South.
+الرابط: To Kill a Mockingbird
+
+
+
+2. التصنيف: Non-Fiction (غير خيال)
+
+Sapiens: A Brief History of Humankind
+عدد الصفحات:
+443
+الوصف:
+عربي:
+استعراض لتاريخ البشرية منذ العصور القديمة وحتى العصر الحديث.
+إنجليزي: 
+A review of human history from ancient times to the modern era.
+الرابط: 
+https://www.kobo.com/us/en/ebook/summary-and-analysis-of-sapiens-a-brief-history-of-humankind
+
+
+2. التصنيف: Non-Fiction (غير خيال)
+Sapiens: A Brief History of Humankind
+
+عدد الصفحات: 443
+الوصف:
+عربي: استعراض لتاريخ البشرية منذ العصور القديمة وحتى العصر الحديث.
+إنجليزي: A review of human history from ancient times to the modern era.
+الرابط: Sapiens
+Educated
+
+عدد الصفحات: 334
+الوصف:
+عربي: مذكرات تتحدث عن فتاة نشأت في بيئة قاسية وتمكنت من الحصول على تعليم رغم التحديات.
+إنجليزي: A memoir about a girl raised in a harsh environment who manages to get an education despite challenges.
+الرابط: Educated
+The Immortal Life of Henrietta Lacks
+
+عدد الصفحات: 370
+الوصف:
+عربي: قصة حقيقية عن الخلايا الخالدة التي ساعدت في تقدم الطب الحديث.
+إنجليزي: The true story of the immortal cells that helped advance modern medicine.
+الرابط: The Immortal Life of Henrietta Lacks
+3. التصنيف: Science (علوم)
+A Brief History of Time
+
+عدد الصفحات: 212
+الوصف:
+عربي: استكشاف علمي للزمن، الكون، والثقوب السوداء، من منظور علمي وفلسفي.
+إنجليزي: A scientific exploration of time, the universe, and black holes, from a scientific and philosophical perspective.
+الرابط: A Brief History of Time
+The Selfish Gene
+
+عدد الصفحات: 360
+الوصف:
+عربي: نظرة جديدة إلى نظرية التطور مع التركيز على الجينات ودورها في بقاء الأنواع.
+إنجليزي: A fresh look at evolutionary theory, focusing on genes and their role in species survival.
+الرابط: The Selfish Gene
+The Gene: An Intimate History
+
+عدد الصفحات: 592
+الوصف:
+عربي: كتاب يعرض تاريخ وأهمية علم الجينات وتأثيره على مستقبل البشرية.
+إنجليزي: A book that presents the history and importance of genetics and its impact on the future of humanity.
+الرابط: The Gene
+4. التصنيف: History (تاريخ)
+Guns, Germs, and Steel
+
+عدد الصفحات: 480
+الوصف:
+عربي: دراسة تحليلية لتطور الحضارات عبر التاريخ باستخدام أسلحة وجراثيم وتقنيات.
+إنجليزي: An analytical study of the evolution of civilizations throughout history using weapons, germs, and technology.
+الرابط: Guns, Germs, and Steel
+The Silk Roads: A New History of the World
+
+عدد الصفحات: 656
+الوصف:
+عربي: إعادة قراءة للتاريخ العالمي من خلال الطرق التجارية القديمة وربط الثقافات المختلفة.
+إنجليزي: A re-reading of world history through ancient trade routes and the connection of different cultures.
+الرابط: The Silk Roads
+The History of the Ancient World
+
+عدد الصفحات: 896
+الوصف:
+عربي: استعراض شامل لتاريخ العالم القديم بدءًا من أقدم الحضارات وحتى انهيار الإمبراطورية الرومانية.
+إنجليزي: A comprehensive overview of ancient world history, from the earliest civilizations to the fall of the Roman Empire.
+الرابط: The History of the Ancient World
+5. التصنيف: Technology (تكنولوجيا)
+Clean Code: A Handbook of Agile Software Craftsmanship
+
+عدد الصفحات: 464
+الوصف:
+عربي: دليل لكتابة كود نظيف وقابل للتعديل باستخدام منهجيات البرمجة الرشيقة.
+إنجليزي: A guide to writing clean and maintainable code using agile software development methodologies.
+الرابط: Clean Code
+The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution
+
+عدد الصفحات: 560
+الوصف:
+عربي: قصة تطور التكنولوجيا الرقمية ودور الرواد في تشكيل العصر الرقمي.
+إنجليزي: The story of the development of digital technology and the role of pioneers in shaping the digital age.
+الرابط: The Innovators
+Artificial Intelligence: A Guide for Thinking Humans
+
+عدد الصفحات: 336
+الوصف:
+عربي: دليل لفهم الذكاء الاصطناعي وتأثيره على المجتمع البشري.
+إنجليزي: A guide to understanding artificial intelligence and its impact on human society.
+الرابط: Artificial Intelligence
+6. التصنيف: Self-Help (تطوير الذات)
+The Power of Habit
+
+عدد الصفحات: 371
+الوصف:
+عربي: استكشاف لعلم العادات وكيف يمكننا تعديلها لتحسين حياتنا.
+إنجليزي: An exploration of the science of habits and how we can change them to improve our lives.
+الرابط: The Power of Habit
+Atomic Habits
+
+عدد الصفحات: 320
+الوصف:
+عربي: دليل عملي لبناء عادات جيدة وتغيير سلوكيات غير مرغوبة.
+إنجليزي: A practical guide to building good habits and changing unwanted behaviors.
+الرابط: Atomic Habits
+The Subtle Art of Not Giving a F*ck
+
+عدد الصفحات: 224
+الوصف:
+عربي: كتاب يقدم نظرة جديدة تجاه السعادة والنجاح من خلال تقليل الاهتمام بما لا يهم.
+إنجليزي: A book offering a fresh perspective on happiness and success by caring less about things that don't matter.
+الرابط: The Subtle Art
+7. التصنيف: Business (أعمال)
+The Lean Startup
+
+عدد الصفحات: 336
+الوصف:
+عربي: منهجية لتأسيس شركة ناشئة تعتمد على التجريب المستمر وتجنب الهدر.
+إنجليزي: A methodology for starting a business that focuses on continuous experimentation and avoiding waste.
+الرابط: The Lean Startup
+Good to Great

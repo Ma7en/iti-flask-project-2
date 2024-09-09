@@ -64,20 +64,36 @@
                         </div>
                     </div>
 
-                    <div class="book-user blog">
-                        <h2 class="h2">Your Books</h2>
+                    <div class="book-user blog mb-5">
+                        <h2 class="h2 mb-2">Your Books</h2>
                         <ul>
                             {% for book in books %}
-                            <li>{{ book.name }} - {{ book.description }}</li>
+                            <a href="{{book.show_url}}" class="topic-btn mb-3">
+                                <div class="icon-box">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </div>
+
+                                <p>{{book.name}}</p>
+                            </a>
+
                             {% endfor %}
                         </ul>
                     </div>
 
                     <div class="category-user blog">
-                        <h2 class="h2">Your Categories</h2>
+                        <h2 class="h2 mb-2">Your Categories</h2>
                         <ul>
                             {% for category in categories %}
-                            <li>{{ category.name }}</li>
+                            <!-- <li>{{ category.name }}</li> -->
+                            <a href="{{category.show_url}}" class="topic-btn">
+                                <div class="icon-box">
+                                    <ion-icon
+                                        name="pricetag-outline"
+                                    ></ion-icon>
+                                </div>
+
+                                <p>{{category.name}}</p>
+                            </a>
                             {% endfor %}
                         </ul>
                     </div>
