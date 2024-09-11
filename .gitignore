@@ -9,7 +9,7 @@ __pycache__/
 .build/
 docs/_build/
 note/
-images/
+
 
 # Local configuration
 *.swp
