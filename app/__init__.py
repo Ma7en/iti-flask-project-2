@@ -1,6 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_migrate import Migrate
-
 from flask_bootstrap import Bootstrap5
 from flask_restful import Resource, Api
 
@@ -52,6 +51,11 @@ def create_app(config_name="prd"):
     from app.categories import categories_blueprint
 
     app.register_blueprint(categories_blueprint)
+
+    # 404
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template("error/404.html"), 404
 
     # # API
     # # -1 -> Books

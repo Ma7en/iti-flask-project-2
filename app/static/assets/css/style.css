@@ -613,6 +613,47 @@ header .btn-group {
 }
 
 /*-----------------------------------*\ 
+    #error 404 SECTION
+\*-----------------------------------*/
+.error-404 {
+    background: var(--background-primary);
+    color: var(--foreground-primary);
+}
+
+.error-404 .container {
+    min-height: 80dvh;
+    display: grid;
+    align-items: center;
+}
+
+.error-404 .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 30px;
+}
+
+.error-404 .image img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.error-404 h1 {
+    font-size: 72px;
+    color: #ff6b6b;
+}
+
+.error-404 p {
+    font-size: 24px;
+    color: #fff;
+}
+
+.error-404 a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+/*-----------------------------------*\ 
     #HERO SECTION
 \*-----------------------------------*/
 

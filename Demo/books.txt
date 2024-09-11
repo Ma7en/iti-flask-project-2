@@ -1,0 +1,67 @@
+
+1. Fiction 
+
+image:
+book-1
+
+Book Name:
+1984
+
+Number of pages:
+328
+
+Description:
+A dystopian novel that explores themes of totalitarian government, surveillance, and thought control.
+
+Link:
+https://www.amazon.com/1984-George-Orwell-Eighty-Four-Paperback/dp/605746222X
+
+
+
+
+2. History 
+
+image:
+book-2
+
+
+Book Name:
+Guns, Germs, and Steel
+
+Number of pages:
+480
+
+Description:
+An analytical study of the evolution of civilizations throughout history using weapons, germs, and technology.
+
+
+Link: 
+https://brownbagbooks.biz/products/guns-germs-and-steel
+
+
+
+3. Science 
+
+
+image:
+book-3
+
+Book Name:
+A Brief History of Time
+
+
+Number of pages:
+212
+
+
+Description:
+A scientific exploration of time, the universe, and black holes, from a scientific and philosophical perspective.
+
+
+Link: 
+https://www.jumia.com.eg/ar/generic-a-brief-history-of-time-32588739.html
+
+
+
+
+

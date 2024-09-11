@@ -1,0 +1,32 @@
+{% extends './base.html' %}
+
+<!-- content -->
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<main>
+    <section>
+        <div class="error-404">
+            <div class="container py-5">
+                <!--  -->
+                <div class="content">
+                    <div class="image">
+                        <img
+                            src="{{ url_for('static', filename='assets/images/error/error-404.png') }}"
+                            alt="Devblog error 404"
+                        />
+                    </div>
+                    <p>Oops! The page you're looking for doesn't exist.</p>
+                    <a href="{{ url_for('home.home') }}">Go Back to Home</a>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
