@@ -18,9 +18,6 @@ from app.home import home_blueprint
 def home():
     books = Books.query.all()
     categories = Categories.query.all()
-    # print("================================")
-    # print("Books:", books)
-    # print("================================")
     return render_template("home/home.html", books=books, categories=categories)
 
 
